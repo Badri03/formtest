@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greywiz - Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e63946;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .contact-btn {
+            background: #ff0419;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background: url('./bg.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 325px 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero-text p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        .form-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            background: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            color: #090000;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .contact-form button {
+            background: #e63946;
+            color: #fffefe;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+          background: url('./footer.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-text h1 {
+                font-size: 2em;
+            }
+
+            .hero-text p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GREYWIZ</div>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SOLUTIONS</a></li>
+                <li><a href="#">PROMO</a></li>
+                <li><a href="#" class="contact-btn">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <!--<h1>We’re here to help</h1>
+                <p>Get a best quotation from greywiz</p>
+            </div> -->
+        </section>
+        
+        <section class="form-section">
+            <form class="contact-form" id="contactForm">
+              <form id="contactForm" action="https://submit-form.com/xiZzMfQla">
+                <div class="form-group"> 
+                    <input type="text" placeholder="First Name" name="firstName" required>
+                    <input type="text" placeholder="Last Name" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <input type="tel" placeholder="Your phone number" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="contactDate" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!--<p>THANK YOU for reaching us!</p> 
+        <p>&copy; 2024 greywiz.com. All rights reserved.</p> -->
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>
